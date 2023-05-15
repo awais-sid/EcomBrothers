@@ -236,7 +236,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #F8F5FB;
+    background: aliceblue;
    }
    .swiper {
     width: 100%;
@@ -256,6 +256,14 @@ body{
   }
   .swiper-slide-active{
     filter: blur(0px);
+    /* border: 20px solid white; */
+    border-top: 50px solid ;
+    border-bottom: 50px solid ;
+    border-left: 10px solid ;
+    border-right: 10px solid ;
+
+
+    border-radius: 30px;
 
   }
 
