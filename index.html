@@ -11,101 +11,81 @@
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- swiper js -->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ScrollReveal.js -->
+  <script src="https://unpkg.com/scrollreveal"></script>
   <!-- style css -->
   <link rel="stylesheet" href="style.css">
+  <!-- site icon -->
+  <link rel="icon" type="image/png" href="/images/Logo_a4a9dd4a-3bd1-4185-8c29-8089b35a9290_120x.png">
+
 </head>
 
 <body>
   <!-- navbar -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Navbar brand -->
-      <a class="navbar-brand me-2" href="#">
-        <img src="https://cdn.shopify.com/s/files/1/0666/4493/4900/files/Logo_Transparent.png?v=1683819629&width=220"
-          height="32" alt="EcomBrothers Logo" loading="lazy" style="margin-top: -1px;" />
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/Logo_a4a9dd4a-3bd1-4185-8c29-8089b35a9290_120x.png
+        " width="59" alt="Your Logo">
       </a>
-
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample"
-        aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarButtonsExample">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Our Services</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="customer">Happy Customers</a>
+            <a class="nav-link" href="customers.html">Our Happy customer</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#faq">FAQs</a>
           </li>
         </ul>
-        <!-- Left links -->
-
-        <div class="d-flex align-items-center">
-         <a href="services.html"> <button class="btn-nav color-6 text-uppercase ">Get Started</button></a>
-          <i class="fas fa-user fa-1x mx-3"></i>
-          <i class="fas fa-phone fa-1x"></i>
-
-          <!-- <button class="btn-hover color-6 text-uppercase mt-2 btn-sm">Get Started</button> -->
-          <!-- <button type="button nav-btn" class="btn btn-primary me-3 fw-bold fs-5">
-          Get Started
-        </button> -->
-        </div>
       </div>
-      <!-- Collapsible wrapper -->
+      <i class="fas fa-user fa-1x"></i>
+      <i class="fas fa-phone fa-1x mx-3"></i>
+      <button class="btn btn-primary nav-btn ">Get Started</button>
+
     </div>
-    <!-- Container wrapper -->
   </nav>
-  <!-- Navbar -->
-  <!-- bar -->
-  <div class="top-bar text-center">
-    STARTE HEUTE !
+
+  <div class="top-bar fixed-top text-center py-2" style="margin-top: 70px;">
+    STARTE HEUTE!
   </div>
 
 
 
   <!-- Header -->
   <header id="header">
-  
-    <div class="container-fluid">
-      <div class="row height align-items-center">
-        <div class="col-md-6 col-sm-12">
-          <div class="title">
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 pt-5 mt-5">
+          <div class="title pt-5 ">
             <h1>YOU ARE ONE STORE AWAY FROM YOUR DREAMS</h1>
             <p>Your E-commerce Success Is Just A Few Clicks Away And We Can Help You Get There</p>
-            <button class="btn-hover color-6 text-uppercase mt-2">Start Now</button>
+            <button
+              class="btn-hover color-6 text-uppercase mt-2 animate__animated animate__fadeInUp animate__delay-2s">Start
+              Now</button>
           </div>
 
         </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="banner">
-
-            <img src="./img/IMG_2464.png" class="img-fluid" width="615px" alt="">
+        <div class="col-md-6 col-sm-12 py-5 ">
+          <div class="banner pb-5 ">
+            <img src="./img/IMG_2464.png" class="img-fluid pt-5" width="615px" alt="">
           </div>
         </div>
       </div>
-      
-      <!-- <div class="banner">
-
-        <img src="./img/IMG_2464.png" width="615px" alt="">
-      </div> -->
     </div>
   </header>
 
@@ -113,23 +93,24 @@
   <section id="about">
     <div class="container-fluid">
       <div class="heading pt-5">
-        <h2>WHY WORK WITH IMPERIAL E-COMMERCE?</h2>
+        <h2 class="box" data-sr="enter left, move 50px over 1s">WHY WORK WITH IMPERIAL E-COMMERCE?</h2>
       </div>
     </div>
-    <div class="container">
+
+    <div class="container-fluid">
       <div class="row height-70 align-items-center">
-        <div class="col-md-4 text-center">
-          <img src="./img/dollar_340x.webp" width="170px" class="about-img" alt="">
+        <div class="col-md-4 text-center box" data-sr="enter left, move 50px over 1s, 1s">
+          <img src="./images/dollar_340x.png" width="170px" class="about-img" alt="">
           <h3 class="heading-title pt-3">$5,573,440</h3>
           <p class="main-text pt-3">Generated In Revenue For Our Clients (So Far)</p>
         </div>
-        <div class="col-md-4 text-center">
-          <img src="./img/speaker_x.webp" width="170px" class="about-img" alt="">
+        <div class="col-md-4 text-center box" data-sr="enter left, move 50px over 1s, 1.5s">
+          <img src="./images/speaker.png" width="170px" class="about-img" alt="">
           <h3 class="heading-title pt-3">OVER $1,557,300</h3>
           <p class="main-text pt-3">Spent On Google & Facebook Advertising</p>
         </div>
-        <div class="col-md-4 text-center">
-          <img src="./img/store_340x.webp" width="170px" class="about-img" alt="">
+        <div class="col-md-4 text-center box" data-sr="enter left, move 50px over 1s, 2s">
+          <img src="./images/store_340x.png" width="170px" class="about-img" alt="">
           <h3 class="heading-title pt-3">650+</h3>
           <p class="main-text pt-3">Successful Stores Created, Deployed, And Scaled</p>
         </div>
@@ -137,82 +118,85 @@
     </div>
   </section>
 
+  <!-- steppspspss -->
+
+
   <!-- build your brand -->
   <section id="brand-section">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="./img/picture_2_1000x.webp" class="img-fluid" width="576" class="brand-img" alt="">
+      <div class="row height align-items-center">
+        <div class="col-md-6 box" data-sr="enter left, move 50px over 1s">
+          <img src="./images/picture_2_1000x .png" class="img-fluid" width="576" class="brand-img" alt="">
         </div>
         <div class="col-md-6 ">
           <div class="heading pt-5 ">
-            <h2> BUILD YOUR BRAND</h2>
+            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s"> BUILD YOUR BRAND</h2>
           </div>
-          <h3 class="pt-3 h5 subtext">STAND OUT OR GET LOST</h3>
-          <p class="pt-3">We find the right products that will sell, create and deploy your store to get your <b>first
+          <h3 class="pt-3 h5 subtext box" data-sr="enter left, move 50px over 1s, 1.5s">STAND OUT OR GET LOST</h3>
+          <p class="pt-3 box" data-sr="enter left, move 50px over 1s, 2s" style="width:85%">We find the right products
+            that will sell, create and deploy your store to
+            get your <b>first
               sale</b> , and then help you profitably <b>scale up</b> by leveraging <b>paid advertising</b>.</p>
         </div>
       </div>
   </section>
 
   <!-- slider section -->
- <section class="height">
-  <div class="container-fluid pt-5">
-    <div class="heading pt-5">
-      <h2>Our Happy Customers</h2>
-      <p class="pt-3">Starte ein erfolgreiches Online-Business sowie 500+ von unseren aktiven Kunden Weltweit!</p>
+  <section class="height">
+    <div class="container-fluid pt-5">
+      <div class="heading pt-5">
+        <h2 class="box" data-sr="enter left, move 50px over 1s">WHAT PEOPLE SAY ABOUT US?</h2>
+      </div>
     </div>
-  </div>
-  <div id="slider">
-<!-- Swiper -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="img/customer1.webp" />
+    <div id="slider">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/customer1.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer2.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer3.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer4.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer5.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer6.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer7.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer8.webp" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/customer9.webp" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-    <div class="swiper-slide">
-      <img src="img/customer2.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer3.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer4.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer5.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer6.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer7.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer8.webp" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/customer9.webp" />
-    </div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div>
-
-  </div>
- </section>
-
-
+  </section>
 
 
   <!-- bget anywhere -->
   <section id="brand-section">
-    <div class="container">
-      <div class="row height-70 align-items-center">
+    <div class="container-fluid">
+      <div class="row height align-items-center">
         <div class="col-md-6">
           <div class="heading pt-5 ">
-            <h2>VEREINT QUALITÄT UND ZUVERLÄSSIGKEIT IN EINEM</h2>
+            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s">THE ONLY WAY TO GET ANYWHERE WITH E-COMMERCE IS
+              LETTING THE EXPERTS HELP YOU</h2>
           </div>
-          <p class="pt-3">We offer a <b>complete, turnkey, 360-degree solution</b> for aspiring E-commerce
+          <p class="pt-3 box" data-sr="enter left, move 50px over 1s, 1.5s">We offer a <b>complete, turnkey, 360-degree
+              solution</b> for aspiring E-commerce
             entrepreneurs: helping you <b>discover, start, and scale</b>. More importantly, all our stores are built
             with a <b>customer centric philosophy</b>.</p>
         </div>
@@ -286,23 +270,25 @@
   <!-- turn key data section -->
 
   <section id="brand-section">
-    <div class="container py-5">
-      <div class="row height-70 align-items-center">
+    <div class="container-fluid py-5">
+      <div class="row height align-items-center">
         <div class="col-md-6">
           <div class="heading pt-5 ">
-            <h2>HERE’S WHY OUR TURN-KEY, DATA-DRIVEN SOLUTION IS PERFECT FOR ASPIRING ENTREPRENEURS.
+            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s">HERE’S WHY OUR TURN-KEY, DATA-DRIVEN SOLUTION IS
+              PERFECT FOR ASPIRING ENTREPRENEURS.
             </h2>
           </div>
-          <p class="pt-3">We strive to create self-functioning ecosystems that are capable of <b>getting sales on
+          <p class="pt-3 box" data-sr="enter left, move 50px over 1s,1.5s">We strive to create self-functioning
+            ecosystems that are capable of <b>getting sales on
               autopilot</b>.</p>
         </div>
         <div class="col-md-6 ">
-          <img src="./img/last.webp" class="img-fluid" width="576" class="brand-img" alt="">
+          <img src="./images/picture_2_1_576x.png" class="img-fluid" width="576" class="brand-img" alt="">
         </div>
       </div>
   </section>
 
-   <!-- footer -->
+  <!-- footer -->
 
   <footer class="bg-dark text-center text-white pt-5" style="background-color: #5b05e7 !important; ">
     <!-- Grid container -->
@@ -345,20 +331,17 @@
       <!-- Section: Form -->
     </div>
     <!-- Grid container -->
-
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2022 Copyright EcomBrothers
-
     </div>
     <!-- Copyright -->
   </footer>
 
 
-
   <!-- javscript script for faqs -->
   <script>
-  let items = document.querySelectorAll(".faq-section .faq-accordions .title");
+    let items = document.querySelectorAll(".faq-section .faq-accordions .title");
     items.forEach(function (t) {
       t.addEventListener("click", function (e) {
         items.forEach(function (e) {
@@ -380,8 +363,21 @@
         modifier: 2,
         slideShadows: true,
       },
-      loop:true,
+      loop: true,
     });
+    ScrollReveal().reveal('.box', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 0,
+      opacity: 0,
+      scale: 1,
+      easing: 'ease-in-out',
+      mobile: false,
+      reset: false,
+      viewFactor: 0.2,
+    });
+
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

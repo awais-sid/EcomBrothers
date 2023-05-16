@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./century-gothic/CenturyGothic.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: aliceblue;
 }
 
 .height {
@@ -25,45 +26,48 @@ body {
 
 .navbar ul li a {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
 }
 
 .nav-btn {
-    background-color: #5b05e7;
+    background: linear-gradient(to left, #4717F6, #FF00B8);
     border-radius: 50px;
+    font-family: 'CustomFont', sans-serif;
+    font-weight: 600;
+    padding: 7px 50px;
 }
 
 .top-bar {
-    background-color: #5b05e7;
-    height: 2rem;
-    font-family: 'Didact Gothic', sans-serif;
+    background-color: #5b05e7 !important;
+    /* height: 2rem; */
+    font-family: 'CustomFont', sans-serif;
     color: white;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 1px;
-    height: 7vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+
 .container-fluid {
-    width: 95% !important;
+    width: 90% !important;
     margin: 0 auto;
 }
+
 
 .title h1 {
     font-size: 60px;
     color: #000000;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    width: 75%;
+    width: 100%;
     line-height: 89px;
 }
 
 .title p {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'CustomFont', sans-serif;
     font-size: 20px;
     color: #000000;
     width: 65%;
@@ -87,31 +91,13 @@ body {
     transition: all .4s ease-in-out;
 }
 
-.btn-nav {
-    width: 220px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    cursor: pointer;
-    height: 40px;
-    text-align: center;
-    border: none;
-    background-size: 300% 100%;
-    background-color: #5b05e7;
-
-    border-radius: 50px;
-    transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
 .btn-hover:hover {
     background-position: 100% 0;
     transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    background-color: red;
 }
 
 .btn-hover:focus {
@@ -119,16 +105,17 @@ body {
 }
 
 .btn-hover.color-6 {
-    background-image: linear-gradient(to right, #4717F6, #A239CA);
+    background: linear-gradient(to left, #4717F6, #FF00B8);
     /* box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75); */
 }
 
 #header {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1800" fill="%235B05E7"><path d="M1386.57 181.4c160.9 73.74 328.5 149.72 424.59 281.57 96.09 129.61 118.44 315.09 98.33 487.16-20.11 172.07-84.92 332.97-187.71 446.94-105.03 116.2-250.29 185.48-391.07 243.58-138.55 60.34-272.63 109.5-393.31 91.62-122.91-17.88-234.64-102.8-377.66-160.9-143.02-58.1-317.33-87.15-406.71-183.24-89.39-96.09-96.09-261.46 2.23-368.72 98.33-109.5 301.68-160.9 384.37-270.4 82.68-111.73 42.46-283.81 84.92-422.36C669.24 188.1 798.86 80.83 937.41 60.72c140.79-20.11 290.51 49.16 449.17 120.67Z"></path></svg>') right no-repeat;
+    /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1800" fill="%235B05E7"><path d="M1386.57 181.4c160.9 73.74 328.5 149.72 424.59 281.57 96.09 129.61 118.44 315.09 98.33 487.16-20.11 172.07-84.92 332.97-187.71 446.94-105.03 116.2-250.29 185.48-391.07 243.58-138.55 60.34-272.63 109.5-393.31 91.62-122.91-17.88-234.64-102.8-377.66-160.9-143.02-58.1-317.33-87.15-406.71-183.24-89.39-96.09-96.09-261.46 2.23-368.72 98.33-109.5 301.68-160.9 384.37-270.4 82.68-111.73 42.46-283.81 84.92-422.36C669.24 188.1 798.86 80.83 937.41 60.72c140.79-20.11 290.51 49.16 449.17 120.67Z"></path></svg>') right no-repeat; */
+    background: url("./images/bg-promo.png") center no-repeat;
 }
 
-/* About */
 
+/* About */
 
 .heading h2 {
     font-size: 40px;
@@ -145,7 +132,7 @@ body {
 }
 
 .main-text {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'CustomFont', sans-serif;
     font-size: 20px;
     color: #000000;
     width: 75%;
@@ -160,9 +147,8 @@ body {
 
 /* faq */
 .faq-section {
-    font-family: 'Didact Gothic', sans-serif;
-    background: linear-gradient(275.12deg, #4717F6 -45.14%, #A239CA 125.17%);
-    ;
+    font-family: 'CustomFont', sans-serif;
+    background: linear-gradient(275.12deg, #4717F6 -45.14%, #A239CA 125.17%);;
     padding: 60px 0;
     text-align: center;
     background-position: bottom right 0%;
@@ -258,7 +244,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: aliceblue;
 }
 
 .swiper {
@@ -318,7 +303,7 @@ footer {
 }
 
 .description ul li {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'CustomFont', sans-serif;
     font-size: 16px;
 }
 
@@ -338,27 +323,43 @@ footer {
         width: 90%;
         margin: 0 auto;
         line-height: 55px;
-        
+
     }
-    #header{
-    background: none;
+
+    #header {
+        background: none;
     }
-    .title p{
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
+
+    .title p {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 20px;
     }
-    .btn-hover{
+
+    .btn-hover {
         margin: 0 auto;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .heading h2 {
         text-align: center;
     }
-    p, .subtext{
+
+    p,
+    .subtext {
         text-align: center;
     }
-  }
+
+    .faq-section .faq-accordions .accordion-row .title {
+        font-size: 18px;
+
+    }
+
+    .accordion-row {
+        padding: 0 20px;
+
+    }
+}
