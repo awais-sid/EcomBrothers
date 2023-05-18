@@ -461,5 +461,10 @@ footer {
        font-size: 14px;
   
     }
-
+    .title h1{
+        padding-top: 1em;
+    }
+    #about{
+        padding-top: 4em;
+    }
 }
