@@ -85,7 +85,6 @@
     text-align: center;
     border: none;
     background-size: 300% 100%;
-
     border-radius: 50px;
     transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -99,7 +98,7 @@
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .btn-hover:focus {
@@ -465,6 +464,9 @@ footer {
         padding-top: 1em;
     }
     #about{
-        padding-top: 4em;
+        padding-top: 8em;
     }
+    .service-pic {
+        background-size: contain;
+      }
 }
