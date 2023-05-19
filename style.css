@@ -307,7 +307,9 @@ footer {
     ;
     align-items: center;
 }
-
+.p-top{
+    margin-top: 6rem;
+}
 .description h3 {
     font-size: 22px;
     font-weight: bold;
@@ -466,7 +468,8 @@ footer {
     #about{
         padding-top: 8em;
     }
-    .service-pic {
-        background-size: contain;
-      }
+    .p-top{
+        margin-top: 0 !important;
+    }
+    }
 }
