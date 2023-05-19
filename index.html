@@ -22,16 +22,14 @@
   <link rel="stylesheet" href="style.css">
   <!-- site icon -->
   <link rel="icon" type="image/avif" href="images/Logo_Transparent.avif">
-
 </head>
 
 <body>
 
-
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/Logo_Transparent.avif" " width=" 189" alt="Your Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -64,14 +62,12 @@
     STARTE HEUTE!
   </div>
 
-
-
   <!-- Header -->
   <header id="header">
     <div class="container-fluid mt-5 ">
       <div class="row height align-items-center">
-        <div class="col-md-6 col-sm-12 ">
-          <div class="title pt-5 ">
+        <div class="col-md-6 col-sm-12 order-2 order-md-1 screen-height">
+          <div class="title ">
             <h1>ÜBER UNS</h1>
             <p>Wir als die EcomBrothers sind darauf spezialisiert, unseren Kunden zu einem erfolgreichen Online-Business
               zu verhelfen. Dabei legen wir großen Wert auf eine individuelle & umfassende Betreuung unserer Kunden. Wir
@@ -88,9 +84,8 @@
           </div>
 
         </div>
-        <div class="col-md-6 col-sm-12 ">
-          <div class="banner pb-5 ">
-            <img src="./img/IMG_2464.png" class="img-fluid pt-5" width="615px" alt="">
+        <div class="col-md-6 col-sm-12 order-1 order-md-2">
+          <div class="banner pb-5 image-screen screen-height">
           </div>
         </div>
       </div>
@@ -99,28 +94,123 @@
 
   <!-- why work (About) -->
   <section id="about">
-    <div class="container-fluid mt-5">
-      <div class="heading pt-5">
-        <h2 class="box pt-5" data-sr="enter left, move 50px over 1s">WHY WORK WITH ECOMROTHERS?</h2>
+    <div class="container-fluid">
+      <div class="row height-70 align-items-center">
+        <div class="col-md-6 text-center box" data-sr="enter left, move 50px over 1s, 2s">
+          <img src="./images/77.png" width="90%" class="about-img" alt="">
+          <h3 class="heading-title ">500+</h3>
+          <p class="main-text">Successful Stores Created, Deployed, And Scaled</p>
+        </div>
+        <div class="col-md-6 box" data-sr="enter left, move 50px over 2s, 2s"><img src="./images/IMG_2464.png"
+            width="100%" class="about-img" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecom-package -->
+  <section id="service">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 service-pic height">
+
+        </div>
+        <div class="col-md-6 p-top">
+          <h2 class="mb-4 product-heading pt-5 ">Kompletter One Product Shopify Store. Bereit, Verkäufe zu tätigen.</h2>
+          <ul class="list-unstyled product-list">
+            <div class="d-flex">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">Produktrecherche Inklusive (trending product).</li>
+            </div>
+            <div class="d-flex pt-3">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">Werbevideos Inklusive.</li>
+            </div>
+            <div class="d-flex py-3">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">Tutorial videos zum Ads aufschalten auf TikTok und Facebook.</li>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">Zufriedenheits Garantie.</li>
+            </div>
+            <div class="d-flex py-3">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">24/7 Support und 5 Tage Lieferzeit.</li>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold"> Geeignet für Anfänger und fortgeschrittene Dropshipper.</li>
+            </div>
+
+          </ul>
+          <!-- Add a contact button -->
+          <a href="#" class="mt-5" id="contactButton" class="contact-us-btn"><img
+              src="images/contact-us-imageicon-img.png" width="150" alt="Contact Us" data-bs-toggle="tooltip"
+              title="Contact Us"></a>
+
+          <!-- Contact pop-up -->
+          <div id="contactPopup" class="popup">
+            <div class="popup-content">
+              <h3>Kontaktiere uns!</h3>
+              <p>Du kannst uns über Instagram oder WhatsApp kontaktieren:</p>
+              <ul>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/ecombrothersofficial/"
+                  role="button"><i class="fab fa-instagram text-danger fa-3x"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+4917615639369?text=ECOM"
+                  role="button"><i class="fa-brands fa-whatsapp fa-3x text-success"></i></a>
+              </ul>
+              <button id="closePopup" class="btn btn-danger">Close</button>
+            </div>
+          </div>
+
+          <!-- <button class="btn btn-warning">Add to Cart</button> -->
+        </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row height-70 align-items-center">
-        <div class="col-md-4 text-center box" data-sr="enter left, move 50px over 1s, 1s">
-          <img src="./images/dollar-gold.png" width="100%" class="about-img" alt="">
-          <h3 class="heading-title pt-3">$5,573,440</h3>
-          <p class="main-text pt-3">Generated In Revenue For Our Clients (So Far)</p>
-        </div>
-        <div class="col-md-4 text-center box" data-sr="enter left, move 50px over 1s, 1.5s">
-          <img src="./images/66.png" width="100%" class="about-img" alt="">
-          <h3 class="heading-title pt-3">OVER $1,557,300</h3>
-          <p class="main-text pt-3">Spent On Google & Facebook Advertising</p>
-        </div>
-        <div class="col-md-4 text-center box" data-sr="enter left, move 50px over 1s, 2s">
-          <img src="./images/77.png" width="100%" class="about-img" alt="">
-          <h3 class="heading-title pt-3">650+</h3>
-          <p class="main-text pt-3">Successful Stores Created, Deployed, And Scaled</p>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="heading py-5">
+            <h2>Shopify Paket</h2>
+          </div>
+          <div class="description">
+            <h3>Description</h3>
+            <p class="pt-2">Auf der suche nach einem shop womit du dich endlich glücklich schätzen kannst? <br> <br> Wir
+              helfen Dir! <br> <br> Als die EcomBrothers entwickeln wir komplette Shopify-Websiten &
+              Shopify-Dropshipping Stores die unseren Kunden dabei verhelfen ihre Vorstellungen in die Realität
+              umzusetzen. <br> <br>Unser Team hat Erfahrung im Design & der Entwicklung von Shopify wie kein anderers da
+              wir die neuesten Webtechnologien, aktuelle Kundenerfahrungen, trendige E-Commerce Techniken, moderne
+              Benutzeroberflächen & Leidenschaft zum Detail kombinieren, um einen produktiven und verkaufsbereiten
+              Shopify Store für dich aufzubauen. <br><br>
+              <strong>Warum Du uns beauftragen solltest:</strong>
+            </p>
+            <ul>
+              <li>Shopify & Dropshipping Experten seit mehr als 5 Jahren</li>
+              <li>5+ Jahre Erfahrung mit Shopify</li>
+              <li>100 % Kostenloser Support</li>
+              <li>100 % Kundenzufriedenheit</li>
+              <li>100 % Professionelle Arbeit</li>
+              <li> 100 % Pünktliche Lieferung</li>
+            </ul>
+            <p> <strong>Was unser Service beinhaltet.:</strong></p>
+            <ul>
+              <li>Die Erstellung von Shopify Stores inkl. Produkt Recherche & beschaffung von Werbevideos</li>
+              <li>Elegantes und hochwertiges Design</li>
+              <li>Logo & alle notwendigen Grafiken</li>
+              <li> Navigation & Menüs</li>
+              <li>Dropshipping über die Dsers-App</li>
+              <li> Hochladen von Produkten und Kollektionen</li>
+              <li> Einrichtung der Kontakt- und Richtlinienseiten</li>
+              <li> Newsletter-Popup</li>
+              <li>Beste Apps installieren</li>
+              <li> FB Pixel- und Social-Media-Integration</li>
+              <li>Domain-Setup</li>
+              <li>Versandeinrichtung</li>
+              <li>Upselling-Funktionen & vieles mehr</li>
+            </ul>
+            <p>Erhalte unseren Service & wir fangen damit sofort an für dich zu arbeiten!</p>
+          </div>
         </div>
       </div>
     </div>
@@ -155,59 +245,63 @@
       </div>
     </div>
     <div id="slider">
-      <!-- Swiper -->
+
       <div class="swiper mySwiper">
+
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="images/1.jpg" />
+            <img src="images/reviews/review1.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/2.jpg" />
+            <img src="images/reviews/review2.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/3.jpg" />
+            <img src="images/reviews/review3.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/4.jpg" />
+            <img src="images/reviews/review4.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/5.jpg" />
+            <img src="images/reviews/review5.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/6.jpg" />
+            <img src="images/reviews/review6.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/7.jpg" />
+            <img src="images/reviews/review7.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/8.jpg" />
+            <img src="images/reviews/review8.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/9.jpg" />
+            <img src="images/reviews/review9.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/10.jpg" />
+            <img src="images/reviews/review10.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/11.jpg" />
+            <img src="images/reviews/review11.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/12.jpg" />
+            <img src="images/reviews/review12.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/13.jpg" />
+            <img src="images/reviews/review13.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/14.jpg" />
+            <img src="images/reviews/review14.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/15.jpg" />
+            <img src="images/reviews/review15.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/16.jpg" />
+            <img src="images/reviews/review16.jpeg" />
           </div>
           <div class="swiper-slide">
-            <img src="images/17.jpg" />
+            <img src="images/reviews/review17.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/reviews/review18.jpeg" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -215,30 +309,25 @@
     </div>
   </section>
 
-
-
   <!-- bget anywhere -->
-  <section id="brand-section">
+  <section id="bros-section">
     <div class="container-fluid">
-      <div class="row height align-items-center">
-        <div class="col-md-6">
+      <div class="row screen-height py-5 align-items-center">
+        <div class="col-md-6 order-2 order-md-1">
           <div class="heading pt-5 ">
-            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s">THE ONLY WAY TO GET ANYWHERE WITH E-COMMERCE IS
-              LETTING THE EXPERTS HELP YOU</h2>
+            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s"> VEREINTE QUALITÄT & ZUVERLÄSSIGKEIT IN EINEM
+            </h2>
           </div>
-          <p class="pt-3 box" data-sr="enter left, move 50px over 1s, 1.5s">We offer a <b>complete, turnkey, 360-degree
-              solution</b> for aspiring E-commerce
-            entrepreneurs: helping you <b>discover, start, and scale</b>. More importantly, all our stores are built
-            with a <b>customer centric philosophy</b>.</p>
         </div>
-        <div class="col-md-6 ">
-          <img src="./images/illustration-1.jpg" class="img-fluid" width="100%" class="brand-img" alt="">
+        <div class="col-md-6 order-1 order-md-2">
+          <img src="./images/handshake.JPG" class="img-fluid" width="100%" class="img-desktop rounded" alt="">
+
         </div>
       </div>
   </section>
 
   <!-- faqs -->
-  <section id="faq" class="faq-section my-5">
+  <section id="faq" class="faq-section mt-5">
     <div class="fix-wrap">
       <div class="section-header">
         <h3 class="heading">FAQs</h3>
@@ -246,83 +335,87 @@
       <div class="faq-accordions">
         <div class="accordion-row">
           <div class="title">Was ist Dropshipping?</div>
-          <div class="content">Dropshipping ist eine E-Commerce-Methode, bei der ein Händler die Produkte nicht auf
-            Lager hat, sondern sie bei Bedarf direkt vom Lieferanten oder Hersteller an den Kunden verschickt. Der
-            Händler fungiert als Vermittler und übernimmt die Rolle des Verkäufers, während der Lieferant oder
-            Hersteller für die Lagerung, den Versand und die Abwicklung der Bestellung verantwortlich ist. Die Vorteile
-            von Dropshipping sind, dass der Händler keine Kosten für Lagerung und Inventar hat, kein Risiko von
-            unverkauften Produkten besteht und eine große Auswahl an Produkten angeboten werden kann, ohne physisch
-            Platz dafür zu benötigen.
+          <div class="content">
+            <ul>
+              <li>Dropshipping ist eine E-Commerce-Methode, bei der ein Händler die Produkte nicht auf Lager hat,
+                sondern sie bei Bedarf direkt vom Lieferanten oder Hersteller an den Kunden verschickt. Der
+                Händler fungiert als Vermittler und übernimmt die Rolle des Verkäufers, während der Lieferant oder
+                Hersteller für die Lagerung, den Versand und die Abwicklung der Bestellung verantwortlich ist. Die
+                Vorteile
+                von Dropshipping sind, dass der Händler keine Kosten für Lagerung und Inventar hat, kein Risiko von
+                unverkauften Produkten besteht und eine große Auswahl an Produkten angeboten werden kann, ohne physisch
+                Platz dafür zu benötigen.</li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Was sind die Vorteile von Dropshipping?</div>
-          <div class="content">Kein fixer Arbeitsplatz bzw Geographisch unabhängig
+          <div class="content">
+            <ul>
+              <li>Kein fixer Arbeitsplatz bzw Geographisch unabhängig</li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Garantieren wir Resultate?</div>
-          <div class="content">Nein. Deine Verkäufe hängen von deinen Kunden ab. Niemand kann dir Resultate Garantieren.
+          <div class="content">
+            <ul>
+              <li>Nein. Deine Verkäufe hängen von deinen Kunden ab. Niemand kann dir Resultate Garantieren.</li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Wie lange dauert es bis mein Shop fertig gestellt wird?</div>
-          <div class="content">3-5 Tage. Verspätungen werden kommuniziert.
+          <div class="content">
+            <ul>
+              <li>3-5 Tage. Verspätungen werden kommuniziert.</li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Wenn ich mit dem Shop nicht zufrieden bin krieg ich mein Geld wieder zurück?</div>
-          <div class="content">Gerne können wir ein paar anpassungen auf deinen Wunsch machen, Jedoch gibt es bei uns
-            keine Rückerstattung.
+          <div class="content">
+            <ul>
+              <li>Gerne können wir ein paar anpassungen auf deinen Wunsch machen, Jedoch gibt es bei uns
+                keine Rückerstattung.</li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Welche Zahlungsmethoden akzeptiert ihr?</div>
-          <div class="content">Wir akzeptieren alle gängigen Zahlungsmethoden wie Kreditkarten, und Banküberweisung
-            sowie Krypto. Paypal wird nicht akzeptiert.
+          <div class="content">
+            <ul>
+              <li>Wir akzeptieren alle gängigen Zahlungsmethoden wie Kreditkarten, und Banküberweisung sowie Krypto.
+                Paypal wird nicht akzeptiert.</li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Kann ich meine Bestellung stornieren, nachdem ich sie aufgegeben habe?</div>
-          <div class="content">Ja, solange die Arbeit an deinem Shop noch nicht begonnen hat, kannst du deine Bestellung
-            stornieren. Bitte beachte jedoch, dass nach Beginn der Arbeit keine Stornierungen mehr möglich sind.
+          <div class="content">
+            <ul>
+              <li>Ja, solange die Arbeit an deinem Shop noch nicht begonnen hat, kannst du deine Bestellung
+                stornieren. Bitte beachte jedoch, dass nach Beginn der Arbeit keine Stornierungen mehr möglich sind.
+              </li>
+            </ul>
           </div>
         </div>
         <div class="accordion-row">
           <div class="title">Kann ich mein eigenes Design für den Shop bereitstellen?</div>
-          <div class="content">Ja, wir arbeiten gerne mit Deinen Vorschlägen und passen es an die Anforderungen Deines
-            Shops an.
+          <div class="content">
+            <ul>
+              <li>Ja, wir arbeiten gerne mit Deinen Vorschlägen und passen es an die Anforderungen Deines
+                Shops an.</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- turn key data section -->
-
-  <section id="brand-section">
-    <div class="container-fluid">
-      <div class="row height-70 align-items-center">
-        <div class="col-md-6">
-          <div class="heading">
-            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s">HERE’S WHY OUR TURN-KEY, DATA-DRIVEN SOLUTION IS
-              PERFECT FOR ASPIRING ENTREPRENEURS.
-            </h2>
-          </div>
-          <p class="pt-3 box" data-sr="enter left, move 50px over 1s,1.5s">We strive to create self-functioning
-            ecosystems that are capable of <b>getting sales on
-              autopilot</b>.</p>
-        </div>
-        <div class="col-md-6 ">
-          <img src="./images/illu3.png" class="img-fluid" width="100%" class="brand-img" alt="">
-        </div>
-      </div>
-  </section>
-
   <!-- footer -->
 
-  <footer class="bg-dark text-center text-white pt-5"
-    style="  background: linear-gradient(to left, #af7b27, #e5c562);  ">
+  <footer class="bg-dark text-center text-white" style="  background: linear-gradient(to left, #af7b27, #e5c562);  ">
     <!-- Grid container -->
     <div class="container p-4 pb-4">
       <!-- Section: Form -->
@@ -389,6 +482,7 @@
 
   <!-- javscript script for faqs -->
   <script>
+    // accordian faqs
     let items = document.querySelectorAll(".faq-section .faq-accordions .title");
     items.forEach(function (t) {
       t.addEventListener("click", function (e) {
@@ -424,6 +518,25 @@
       mobile: false,
       reset: false,
       viewFactor: 0.2,
+    });
+
+  </script>
+  <script>
+    // Show contact pop-up when contact button is clicked
+    document.getElementById('contactButton').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('contactPopup').style.display = 'block';
+    });
+
+    // Close contact pop-up when close button is clicked
+    document.getElementById('closePopup').addEventListener('click', function () {
+      document.getElementById('contactPopup').style.display = 'none';
+    });
+
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
     });
 
   </script>

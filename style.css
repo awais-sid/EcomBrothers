@@ -74,6 +74,9 @@
     width: 85%;
 }
 
+a {
+    text-decoration: none;
+}
 
 .btn-hover {
     width: 200px;
@@ -90,6 +93,7 @@
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+
 }
 
 .btn-hover:hover {
@@ -117,7 +121,12 @@
     width: 100%;
 }
 
+.image-screen {
+    background: url("./images/ecom-bros-banner.JPG") center/cover no-repeat;
+    border-radius: 10px;
 
+
+}
 
 .thumbnail-image {
     height: 350px;
@@ -252,6 +261,8 @@
    } */
 
 /* slider */
+
+
 #slider {
     position: relative;
     min-height: 60vh;
@@ -272,24 +283,53 @@
     background-position: center;
     background-size: cover;
     width: 260px;
-    background: #fff;
+    background: #000;
     box-shadow: 0 15px 50px rbga(0, 0, 0, 0.2);
     filter: blur(4px);
+    overflow: hidden;
+
 }
 
 .swiper-slide-active {
     filter: blur(0px);
-    /* border: 20px solid white; */
-    border-top: 50px solid;
-    border-bottom: 50px solid;
-    border-left: 10px solid;
-    border-right: 10px solid;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 20px;
+    border-top: 10px solid black;
+    border-bottom: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
     border-radius: 30px;
 }
+
+.swiper-slide-active::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/reviews--iphone-frame-bg.png");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(0.9);
+    /* Adjust the scale value as needed */
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
 
 .swiper-slide img {
     display: block;
     width: 100%;
+    object-fit: cover;
+}
+
+/* bros section */
+.screen-height {
+    height: 70vh;
 }
 
 /* foooter */
@@ -307,9 +347,11 @@ footer {
     ;
     align-items: center;
 }
-.p-top{
+
+.p-top {
     margin-top: 6rem;
 }
+
 .description h3 {
     font-size: 22px;
     font-weight: bold;
@@ -402,9 +444,10 @@ footer {
 
     }
 
-    #header {
-        background: none;
+    .image-screen {
+        margin-top: 60px;
     }
+
 
     .title p {
         margin: 0 auto;
@@ -458,18 +501,25 @@ footer {
     .navbar-nav {
         background-color: white;
     }
+
     .title p {
-       font-size: 14px;
-  
+        font-size: 14px;
+        width: 100%;
     }
-    .title h1{
+
+    .title h1 {
         padding-top: 1em;
     }
-    #about{
+
+    #about {
         padding-top: 8em;
     }
-    .p-top{
+
+    .p-top {
         margin-top: 0 !important;
     }
-    
+
+    #about {
+        margin-top: 15rem;
+    }
 }
