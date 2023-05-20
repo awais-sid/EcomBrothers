@@ -96,13 +96,13 @@
   <section id="about">
     <div class="container-fluid">
       <div class="row height-70 align-items-center">
-        <div class="col-md-6 text-center box" data-sr="enter left, move 50px over 1s, 2s">
+        <div class="col-md-6 text-center box order-2 order-md-1" data-sr="enter left, move 50px over 1s, 2s">
           <img src="./images/77.png" width="90%" class="about-img" alt="">
           <h3 class="heading-title ">500+</h3>
           <p class="main-text">Successful Stores Created, Deployed, And Scaled</p>
         </div>
-        <div class="col-md-6 box" data-sr="enter left, move 50px over 2s, 2s"><img src="./images/IMG_2464.png"
-            width="100%" class="about-img" alt=""></div>
+        <div class="col-md-6 box order-1 order-md-2" data-sr="enter left, move 50px over 2s, 2s"><img
+            src="./images/IMG_2464.png" width="100%" class="about-img" alt=""></div>
       </div>
     </div>
   </section>
@@ -111,10 +111,10 @@
   <section id="service">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 service-pic height">
-
+        <div class="col-md-6 ">
+          <img src="images/MOCKUP_Product_backup-pic.png" class="service-pic" alt="">
         </div>
-        <div class="col-md-6 p-top">
+        <div class="col-md-6">
           <h2 class="mb-4 product-heading pt-5 ">Kompletter One Product Shopify Store. Bereit, Verkäufe zu tätigen.</h2>
           <ul class="list-unstyled product-list">
             <div class="d-flex">
@@ -162,8 +162,6 @@
               <button id="closePopup" class="btn btn-danger">Close</button>
             </div>
           </div>
-
-          <!-- <button class="btn btn-warning">Add to Cart</button> -->
         </div>
       </div>
     </div>
@@ -175,7 +173,6 @@
             <h2>Shopify Paket</h2>
           </div>
           <div class="description">
-            <h3>Description</h3>
             <p class="pt-2">Auf der suche nach einem shop womit du dich endlich glücklich schätzen kannst? <br> <br> Wir
               helfen Dir! <br> <br> Als die EcomBrothers entwickeln wir komplette Shopify-Websiten &
               Shopify-Dropshipping Stores die unseren Kunden dabei verhelfen ihre Vorstellungen in die Realität
@@ -238,16 +235,14 @@
   </section>
 
   <!-- slider section -->
-  <section class="height">
+  <section class="">
     <div class="container-fluid pt-5">
       <div class="heading pt-5">
         <h2 class="box" data-sr="enter left, move 50px over 1s">WHAT PEOPLE SAY ABOUT US?</h2>
       </div>
     </div>
     <div id="slider">
-
       <div class="swiper mySwiper">
-
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="images/reviews/review1.jpeg" />
@@ -305,12 +300,14 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
 
   <!-- bget anywhere -->
-  <section id="bros-section">
+  <section id="bros-section ">
     <div class="container-fluid">
       <div class="row screen-height py-5 align-items-center">
         <div class="col-md-6 order-2 order-md-1">
@@ -319,9 +316,10 @@
             </h2>
           </div>
         </div>
-        <div class="col-md-6 order-1 order-md-2">
-          <img src="./images/handshake.JPG" class="img-fluid" width="100%" class="img-desktop rounded" alt="">
-
+        <div class="col-md-6 order-1 order-md-2 ">
+          <img src="./images/handshake-min.JPG" class="img-fluid show-res" width="100%" class="img-desktop rounded" alt="">
+          <img src="./images/handshake-bros.JPG" class="img-fluid show-respo d-none" width="100%"
+            class="img-desktop rounded" alt="">
         </div>
       </div>
   </section>
@@ -506,6 +504,11 @@
         slideShadows: true,
       },
       loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
     });
     ScrollReveal().reveal('.box', {
       origin: 'bottom',

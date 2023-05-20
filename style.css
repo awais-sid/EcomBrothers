@@ -43,7 +43,6 @@
 
 .top-bar {
     background: linear-gradient(to left, #f7e17b, #af7b27) !important;
-    /* height: 2rem; */
     font-family: 'CustomFont', sans-serif;
     color: white;
     font-weight: 600;
@@ -102,7 +101,6 @@ a {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    /* background-color: red; */
 }
 
 .btn-hover:focus {
@@ -111,18 +109,16 @@ a {
 
 .btn-hover.color-6 {
     background: linear-gradient(to left, #f7e17b, #af7b27);
-    /* box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75); */
 }
 
 #header {
-    /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1800" fill="%235B05E7"><path d="M1386.57 181.4c160.9 73.74 328.5 149.72 424.59 281.57 96.09 129.61 118.44 315.09 98.33 487.16-20.11 172.07-84.92 332.97-187.71 446.94-105.03 116.2-250.29 185.48-391.07 243.58-138.55 60.34-272.63 109.5-393.31 91.62-122.91-17.88-234.64-102.8-377.66-160.9-143.02-58.1-317.33-87.15-406.71-183.24-89.39-96.09-96.09-261.46 2.23-368.72 98.33-109.5 301.68-160.9 384.37-270.4 82.68-111.73 42.46-283.81 84.92-422.36C669.24 188.1 798.86 80.83 937.41 60.72c140.79-20.11 290.51 49.16 449.17 120.67Z"></path></svg>') right no-repeat; */
     background: url("./images/banner-img-background.png") center/cover no-repeat;
     height: 100vh;
     width: 100%;
 }
 
 .image-screen {
-    background: url("./images/ecom-bros-banner.JPG") center/cover no-repeat;
+    background: url("./images/EcomBros.JPG") center/cover no-repeat;
     border-radius: 10px;
 
 
@@ -131,7 +127,6 @@ a {
 .thumbnail-image {
     height: 350px;
     overflow: hidden;
-    /* border-radius: 150px; */
 }
 
 .thumbnail-image:hover img {
@@ -168,7 +163,9 @@ a {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-
+.d-top{
+    margin-top: 6rem;
+}
 /* faq */
 .faq-section {
     font-family: 'CustomFont', sans-serif;
@@ -255,11 +252,6 @@ a {
     padding: 20px 0px;
 }
 
-/* @media(max-width:1200px) {
-   .faq-section .faq-accordions .accordion-row .title {
-       font-size: 18px;
-   } */
-
 /* slider */
 
 
@@ -271,55 +263,73 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
 }
 
 .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 260px;
+    width: 270px;
     background: #000;
     box-shadow: 0 15px 50px rbga(0, 0, 0, 0.2);
     filter: blur(4px);
-    overflow: hidden;
-
+    overflow: hidden
 }
 
 .swiper-slide-active {
     filter: blur(0px);
-    position: relative;
-    /* overflow: hidden; */
-    border-radius: 20px;
-    border-top: 10px solid black;
-    border-bottom: 20px solid black;
-    border-left: 10px solid black;
-    border-right: 10px solid black;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
-.swiper-slide-active::before {
+.swiper:before {
     content: "";
     position: absolute;
-    top: -30px;
+    top: -20px;
     left: 0;
     right: 0;
     bottom: 0;
     background-image: url("images/reviews--iphone-frame-bg.png");
-    background-size: 130%;
-    background-repeat: no-repeat;
     background-position: center;
-    transform: scale(0.9);
-    /* Adjust the scale value as needed */
-    z-index: 1;
+    background-repeat: no-repeat;
+    transform: scale(0.8, 0.8);
+    z-index: 10000;
     height: 100%;
     width: 100%;
+
+
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
 
 .swiper-slide img {
     display: block;
@@ -342,15 +352,9 @@ footer {
 
 /* Services page styling from here */
 .service-pic {
-    background: url("./images/MOCKUP_Product_backup-pic.png") top/cover no-repeat;
-    height: 100vh;
-    ;
-    align-items: center;
+    width: 100%;
 }
 
-.p-top {
-    margin-top: 6rem;
-}
 
 .description h3 {
     font-size: 22px;
@@ -516,10 +520,21 @@ footer {
     }
 
     .p-top {
+        margin-top: 5rem !important;
+    }
+    .d-top{
         margin-top: 0 !important;
     }
 
     #about {
         margin-top: 15rem;
+    }
+
+    .show-res {
+        display: none;
+    }
+
+    .show-respo {
+        display: block !important;
     }
 }
