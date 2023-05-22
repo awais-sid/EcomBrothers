@@ -19,6 +19,9 @@
 .height-70 {
     min-height: 70vh;
 }
+.height-about{
+    min-height: 80vh;
+}
 
 .navbar {
     height: 12vh;
@@ -59,19 +62,22 @@
 
 .title h1 {
     font-size: 60px;
-    color: #000000;
+    color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     width: 100%;
     line-height: 89px;
+    margin-top: 30rem;
+    text-align: center;
 }
 
 .title p {
     font-family: 'CustomFont', sans-serif;
     font-size: 17px;
     color: #000000;
-    width: 85%;
+    width: 100%;
 }
+
 
 a {
     text-decoration: none;
@@ -79,6 +85,9 @@ a {
 
 .btn-hover {
     width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
@@ -92,6 +101,7 @@ a {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+   
 
 }
 
@@ -112,17 +122,18 @@ a {
 }
 
 #header {
-    background: url("./images/banner-img-background.png") center/cover no-repeat;
-    height: 100vh;
+    background: url("./images/ecom-bros-banner-min.JPG") top/cover no-repeat;
+    /* height: 100vh; */
     width: 100%;
 }
+.banner-height{
+    height: 100vh;
+}
 
-.image-screen {
+/* .image-screen {
     background: url("./images/EcomBros.JPG") center/cover no-repeat;
     border-radius: 10px;
-
-
-}
+} */
 
 .thumbnail-image {
     height: 350px;
@@ -142,7 +153,12 @@ a {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-
+.heading p{
+    /* width: 85%; */
+    margin: 0 auto;
+    font-family: 'CustomFont', sans-serif;
+    font-size: 20px;
+}
 .heading-title {
     font-size: 40px;
     color: #000000;
@@ -156,6 +172,10 @@ a {
     color: #000000;
     width: 75%;
     margin: 0 auto;
+}
+.text{
+    font-family: 'CustomFont', sans-serif;
+    letter-spacing: 1px;
 }
 
 .subtext {
@@ -287,6 +307,7 @@ a {
     filter: blur(0px);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+
 }
 
 .swiper:before {
@@ -347,8 +368,6 @@ footer {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 20px;
 }
-
-
 
 /* Services page styling from here */
 .service-pic {
@@ -436,18 +455,36 @@ footer {
 
 /* media queries start from here */
 @media(max-width: 680px) {
-    .title h1 {
-        font-size: 2.5rem;
-        color: #000000;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        line-height: 55px;
+    #header {
+        background: url("./images/EcomBros.JPG");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+       padding-top:0 !important ;
+        margin-top: 0 !important;
 
     }
-
+    .height-about{
+        min-height: 0vh;
+    }
+    .btn-hover {
+        display: flex;
+        align-items: center;
+    }
+    .banner-height{
+        height: 70vh;
+    }
+    .title h1 {
+        font-size: 26px;
+        line-height: 30px;
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        width: 100%;
+        margin-top: 15rem;
+       
+    }
+      
     .image-screen {
         margin-top: 60px;
     }
@@ -457,14 +494,6 @@ footer {
         margin: 0 auto;
         text-align: center;
         margin-top: 20px;
-    }
-
-    .btn-hover {
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .heading h2 {
@@ -508,16 +537,15 @@ footer {
 
     .title p {
         font-size: 14px;
-        width: 100%;
     }
 
     .title h1 {
         padding-top: 1em;
     }
-
-    #about {
+   
+    /* #about {
         padding-top: 8em;
-    }
+    } */
 
     .p-top {
         margin-top: 5rem !important;
@@ -525,10 +553,10 @@ footer {
     .d-top{
         margin-top: 0 !important;
     }
-
+/* 
     #about {
         margin-top: 15rem;
-    }
+    } */
 
     .show-res {
         display: none;
