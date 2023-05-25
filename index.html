@@ -30,7 +30,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="images/Logo_Transparent.avif" " width=" 189" alt="Your Logo">
+        <img src="images/Logo_Transparent.avif" width=" 189" alt="Your Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,28 +79,34 @@
     </div>
   </header>
 
-  <!-- who we are -->
-  <section class="who-we-are">
-    <div class="container-fluid">
-      <div class="row height-about align-items-center">
-        <div class="col-md-12">
-          <div class="heading text-center">
+  <!-- section About  -->
+  <section id="about-service">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <div class="heading about-top ">
             <h2>ÜBER UNS</h2>
-            <p class="para pt-2">Wir als die EcomBrothers sind darauf spezialisiert, unseren Kunden zu einem
-              erfolgreichen Online-Business
-              zu verhelfen. Dabei legen wir großen Wert auf eine individuelle & umfassende Betreuung unserer Kunden. Wir
-              bieten eine Vielzahl von Dienstleistungen an, darunter die Erstellung von professionellen Webseiten
+          </div>
+          <p class="pt-3">Wir als die <b>EcomBrothers</b> sind darauf spezialisiert, unseren Kunden zu einem
+            erfolgreichen Online-Business zu verhelfen<span id="dots">.</span><span class="read-more"
+              onclick="myFunction()" id="myBtn">Read more</span></p>
+          <div id="more">
+            <p>Dabei legen wir großen Wert auf eine individuelle &
+              <b>umfassende Betreuung unserer Kunden</b>
+
+              Wir bieten eine Vielzahl von Dienstleistungen an, darunter die Erstellung von professionellen Webseiten
               inklusive Produktrecherche & professionellen Werbevideos. Unsere langjährige Erfahrung und Expertise
-              ermöglicht uns eine enge Zusammenarbeit mit unseren Kunden & eine maßgeschneiderte Umsetzung ihrer Wünsche
-              & Anforderungen.
-              Wir freuen uns darauf, Sie auf Ihrem Weg zum Erfolg zu begleiten!</p>
+              ermöglicht uns eine enge Zusammenarbeit mit unseren Kunden & eine maßgeschneiderte Umsetzung <b>ihrer
+                Wünsche & Anforderungen</b> .
+            </p>
+            <p> <b>Wir freuen uns darauf</b>, Sie auf Ihrem Weg zum Erfolg zu begleiten!</p>
           </div>
         </div>
       </div>
     </div>
-
-
+    </div>
   </section>
+
 
   <!-- why work (About) -->
   <section id="about">
@@ -120,18 +126,24 @@
   <!-- Ecom-package -->
   <section id="service">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center pt-5">
         <div class="col-md-6 ">
-          <img src="images/MOCKUP_Product_backup-pic.png" class="service-pic" alt="">
+          <div class="frame">
+            <img src="images/MOCKUP_Product_backup-pic.png" class="service-pic frame-image" alt="">
+          </div>
         </div>
         <div class="col-md-6">
-          <h2 class="mb-4 product-heading pt-5 ">Kompletter One Product Shopify Store. Bereit, Verkäufe zu tätigen.</h2>
+          <!-- <h2 class="mb-4 product-heading pt-5 ">Kompletter Shopify Store. Bereit, Verkäufe zu tätigen.</h2> -->
           <ul class="list-unstyled product-list pb-5">
-            <div class="d-flex">
+            <div class="d-flex paket-top">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">Kompletter Shopify Store. Bereit, Verkäufe zu tätigen.</li>
+            </div>
+            <div class="d-flex py-3">
               <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
               <li class="fw-bold">Produktrecherche Inklusive (trending product).</li>
             </div>
-            <div class="d-flex pt-3">
+            <div class="d-flex ">
               <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
               <li class="fw-bold">Werbevideos Inklusive.</li>
             </div>
@@ -155,8 +167,8 @@
           </ul>
           <!-- Add a contact button -->
           <!-- Add a contact button -->
-          <a href="#" class=" btn-hover color-6 px-2 py-4" id="contactButton" class="contact-us-btn"
-            data-bs-toggle="tooltip" style="font-size: 14px;"> Kontaktiere Uns (instagram whatsapp)</a>
+          <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto " id="contactButton" class="contact-us-btn"
+            data-bs-toggle="tooltip" style="font-size: 14px;"> ALLES IN EINEM SHOPIFY PAKET</a>
 
           <!-- Contact pop-up -->
           <div id="contactPopup" class="popup">
@@ -176,11 +188,11 @@
       </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-2">
       <div class="row">
         <div class="col-md-12">
           <div class="heading py-5">
-            <h2>Shopify Paket</h2>
+            <h2>Premium Shopify Paket</h2>
           </div>
           <div class="description">
             <p class="pt-2">Auf der suche nach einem shop womit du dich endlich glücklich schätzen kannst? <br> <br> Wir
@@ -190,8 +202,9 @@
               wir die neuesten Webtechnologien, aktuelle Kundenerfahrungen, trendige E-Commerce Techniken, moderne
               Benutzeroberflächen & Leidenschaft zum Detail kombinieren, um einen produktiven und verkaufsbereiten
               Shopify Store für dich aufzubauen. <br><br>
-              <strong>Warum Du uns beauftragen solltest:</strong>
+
             </p>
+            <p class="text-start">Warum Du uns beauftragen solltest:</p>
             <ul>
               <li>Shopify & Dropshipping Experten seit mehr als 5 Jahren</li>
               <li>5+ Jahre Erfahrung mit Shopify</li>
@@ -200,7 +213,7 @@
               <li>100 % Professionelle Arbeit</li>
               <li> 100 % Pünktliche Lieferung</li>
             </ul>
-            <p> <strong>Was unser Service beinhaltet.:</strong></p>
+            <p class="text-start"> Was unser Service beinhaltet.:</p>
             <ul>
               <li>Die Erstellung von Shopify Stores inkl. Produkt Recherche & beschaffung von Werbevideos</li>
               <li>Elegantes und hochwertiges Design</li>
@@ -216,7 +229,7 @@
               <li>Versandeinrichtung</li>
               <li>Upselling-Funktionen & vieles mehr</li>
             </ul>
-            <p>Erhalte unseren Service & wir fangen damit sofort an für dich zu arbeiten!</p>
+            <p class="text-start">Erhalte unseren Service & wir fangen damit sofort an für dich zu arbeiten!</p>
           </div>
         </div>
       </div>
@@ -230,9 +243,9 @@
         <div class="col-md-6 box" data-sr="enter left, move 50px over 1s">
           <img src="./images/10.png" class="img-fluid" width="100%" class="brand-img" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 pt-5">
           <div class="heading">
-            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s"> BAUEN SIE IHRE MARKE AUF</h2>
+            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s"> BAU DEINE BRAND AUF!</h2>
           </div>
           <h3 class="pt-3 h5 subtext box text-uppercase" data-sr="enter left, move 50px over 1s, 1.5s">Heben Sie sich ab
             oder verlieren Sie sich</h3>
@@ -316,13 +329,13 @@
     </div>
   </section>
 
-  <!-- bget anywhere -->
+  <!-- bros anywhere -->
   <section id="bros-section ">
     <div class="container-fluid">
       <div class="row screen-height py-5 align-items-center">
         <div class="col-md-6 order-2 order-md-1">
-          <div class="heading pt-1 ">
-            <h2 class="box" data-sr="enter left, move 50px over 1s, 1s"> VEREINTE QUALITÄT & ZUVERLÄSSIGKEIT IN EINEM
+          <div class="heading ">
+            <h2 class="box fs-responsive" data-sr="enter left, move 50px over 1s, 1s"> QUALITÄT & ZUVERLÄSSIGKEIT
             </h2>
           </div>
         </div>
@@ -362,6 +375,9 @@
           <div class="content">
             <ul>
               <li>Kein fixer Arbeitsplatz bzw Geographisch unabhängig</li>
+              <li>Du bist dein eigener Boss</li>
+              <li>Du benötigst kein Lager für deine Produkte</li>
+              <li>Du benötigst nicht viel Startkapital</li>
             </ul>
           </div>
         </div>
@@ -423,8 +439,8 @@
   </section>
 
   <!-- footer -->
-
-  <footer class="bg-dark text-center foot text-white" style="  background: linear-gradient(to left, #af7b27, #e5c562);  ">
+  <footer class="bg-dark text-center foot text-white"
+    style="  background: linear-gradient(to left, #af7b27, #e5c562);  ">
     <!-- Grid container -->
     <div class="container p-4 pb-4">
       <!-- Section: Form -->
@@ -482,7 +498,9 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright EcomBrothers
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Logo_Transparent.avif" " width=" 189" alt="Your Logo">
+      </a>
 
     </div>
     <!-- Copyright -->
@@ -553,6 +571,24 @@
       return new bootstrap.Tooltip(tooltipTriggerEl)
     });
 
+  </script>
+  <!-- read more function -->
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = " Read less";
+        moreText.style.display = "inline";
+      }
+    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

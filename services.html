@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="style.css">
   <!-- site icon -->
   <link rel="icon" type="image/avif" href="images/Logo_Transparent.avif">
+
+
 </head>
 
 <body>
@@ -53,17 +55,23 @@
   <section id="service">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 p-top">
-          <img src="images/MOCKUP_Product_backup-pic.png" class="service-pic" alt="">
+        <div class="col-md-6 p-top " style="padding-top: 8em;">
+          <div class="frame">
+            <img src="images/MOCKUP_Product_backup-pic.png" class="service-pic frame-image" alt="">
+          </div>
         </div>
         <div class="col-md-6 d-top">
-          <h2 class="mb-4 product-heading pt-5 ">Kompletter One Product Shopify Store. Bereit, Verkäufe zu tätigen.</h2>
+          <!-- <h2 class="mb-4 product-heading pt-5 ">Kompletter Shopify Store. Bereit, Verkäufe zu tätigen.</h2> -->
           <ul class="list-unstyled product-list mb-5">
-            <div class="d-flex">
+            <div class="d-flex paket-top">
+              <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
+              <li class="fw-bold">Kompletter Shopify Store. Bereit, Verkäufe zu tätigen.</li>
+            </div>
+            <div class="d-flex py-3">
               <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
               <li class="fw-bold">Produktrecherche Inklusive (trending product).</li>
             </div>
-            <div class="d-flex pt-3">
+            <div class="d-flex">
               <i class="fa-solid fa-circle-check fa-2x ml-4 pl-5" style="margin-right: 10px;"></i>
               <li class="fw-bold">Werbevideos Inklusive.</li>
             </div>
@@ -86,7 +94,8 @@
 
           </ul>
           <!-- Add a contact button -->
-          <a href="#" class=" btn-hover color-6 px-2 py-4" id="contactButton" class="contact-us-btn"   data-bs-toggle="tooltip" style="font-size: 14px;"> Kontaktiere Uns (instagram whatsapp)</a>
+          <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto" id="contactButton" class="contact-us-btn"
+            data-bs-toggle="tooltip" style="font-size: 14px;"> ALLES IN EINEM SHOPIFY PAKET</a>
 
           <!-- Contact pop-up -->
           <div id="contactPopup" class="popup">
@@ -103,16 +112,15 @@
             </div>
           </div>
 
-          <!-- <button class="btn btn-warning">Add to Cart</button> -->
         </div>
       </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="heading py-5">
-            <h2>Shopify Paket</h2>
+        <div class="col-md-12 mt-2">
+          <div class="heading pt-5 py-4">
+            <h2>Premium Shopify Paket </h2>
           </div>
           <div class="description">
             <p class="pt-2">Auf der suche nach einem shop womit du dich endlich glücklich schätzen kannst? <br> <br> Wir
@@ -122,8 +130,9 @@
               wir die neuesten Webtechnologien, aktuelle Kundenerfahrungen, trendige E-Commerce Techniken, moderne
               Benutzeroberflächen & Leidenschaft zum Detail kombinieren, um einen produktiven und verkaufsbereiten
               Shopify Store für dich aufzubauen. <br><br>
-              <strong>Warum Du uns beauftragen solltest:</strong>
+
             </p>
+            <p class="text-start">Warum Du uns beauftragen solltest:</p>
             <ul>
               <li>Shopify & Dropshipping Experten seit mehr als 5 Jahren</li>
               <li>5+ Jahre Erfahrung mit Shopify</li>
@@ -132,7 +141,7 @@
               <li>100 % Professionelle Arbeit</li>
               <li> 100 % Pünktliche Lieferung</li>
             </ul>
-            <p> <strong>Was unser Service beinhaltet.:</strong></p>
+            <p class="text-start"> Was unser Service beinhaltet.:</p>
             <ul>
               <li>Die Erstellung von Shopify Stores inkl. Produkt Recherche & beschaffung von Werbevideos</li>
               <li>Elegantes und hochwertiges Design</li>
@@ -148,80 +157,148 @@
               <li>Versandeinrichtung</li>
               <li>Upselling-Funktionen & vieles mehr</li>
             </ul>
-            <p>Erhalte unseren Service & wir fangen damit sofort an für dich zu arbeiten!</p>
+            <p class="text-start">Erhalte unseren Service & wir fangen damit sofort an für dich zu arbeiten!</p>
+            <p class="text fw-light">Bei Fragen oder Anliegen stehen wir dir gerne über Instagram & WhatsApp zur
+              Verfügung.
+            </p>
+            <!-- Add a contact button -->
+            <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto mt-5" id="contactButton1" class="contact-us-btn1"
+              data-bs-toggle="tooltip" style="font-size: 14px;"> ALLES IN EINEM SHOPIFY PAKET</a>
+
+            <!-- Contact pop-up -->
+            <div id="contactPopup1" class="popup">
+              <div class="popup-content">
+                <h3>Kontaktiere uns!</h3>
+                <p>Du kannst uns über Instagram oder WhatsApp kontaktieren:</p>
+                <ul>
+                  <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.instagram.com/ecombrothersofficial/" role="button"><i
+                      class="fab fa-instagram text-danger fa-3x"></i></a>
+                  <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+4917615639369?text=ECOM"
+                    role="button"><i class="fa-brands fa-whatsapp fa-3x text-success"></i></a>
+                </ul>
+                <button id="closePopup" class="btn btn-danger">Close</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <h2 class="subtext text-center pt-5">Beispiel Webseiten</h2>
-      <p class="subtext text-center pb-5 fs-5 text ">Klick Drauf</p>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
-            <img src="images/portfolio/IMG_2501.png" class="img-fluid rounded " alt="Website 1">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
-            <img src="images/portfolio/IMG_2502.png" class="img-fluid rounded" alt="Website 2">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
-            <img src="images/portfolio/IMG_2503.png" class="img-fluid rounded " alt="Website 3">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5 thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal4">
-            <img src="images/portfolio/IMG_2504.png" class="img-fluid rounded" alt="Website 4">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal5">
-            <img src="images/portfolio/IMG_2520.png" class="img-fluid rounded " alt="Website 5">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal6">
-            <img src="images/portfolio/IMG_2521.png" class="img-fluid rounded" alt="Website 6">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal7">
-            <img src="images/portfolio/IMG_2522.png" class="img-fluid rounded" alt="Website 7">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal8">
-            <img src="images/portfolio/IMG_2523.png" class="img-fluid rounded" alt="Website 8">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal9">
-            <img src="images/portfolio/IMG_2524.png" class="img-fluid rounded" alt="Website 9">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal10">
-            <img src="images/portfolio/IMG_2526.png" class="img-fluid rounded" alt="Website 10">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5 thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal11">
-            <img src="images/portfolio/IMG_2527.png" class="img-fluid rounded" alt="Website 11">
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 pt-5  thumbnail-image">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal12">
-            <img src="images/portfolio/IMG_2528.png" class="img-fluid rounded" alt="Website 12">
-          </a>
-        </div>
-      </div>
+    </div>
     </div>
 
 
+
+
+
+
+    <div class="container pb-5">
+      <h2 class="subtext text-center pt-5">Beispiel Webseiten</h2>
+      <p class="subtext text-center pb-5 fs-5 text ">Klick Drauf</p>
+
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="10"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="11"></button>
+
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="row">
+            <div class="col-12 mx-auto">
+
+              <div class="carousel-item active thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                  <img src="images/portfolio/IMG_2501.png" class="img-fluid rounded " alt="Website 1">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                  <img src="images/portfolio/IMG_2502.png" class="img-fluid rounded" alt="Website 2">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                  <img src="images/portfolio/IMG_2503.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                  <img src="images/portfolio/IMG_2504.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal5">
+                  <img src="images/portfolio/IMG_2520.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal6">
+                  <img src="images/portfolio/IMG_2521.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal7">
+                  <img src="images/portfolio/IMG_2522.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal8">
+                  <img src="images/portfolio/IMG_2523.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal9">
+                  <img src="images/portfolio/IMG_2524.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal10">
+                  <img src="images/portfolio/IMG_2526.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal11">
+                  <img src="images/portfolio/IMG_2527.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                  <img src="images/portfolio/IMG_2528.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+              <div class="carousel-item thumbnail-image">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal13">
+                  <img src="images/portfolio/IMG_2503.png" class="img-fluid rounded " alt="Website 3">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
     </div>
     </div>
 
@@ -406,7 +483,7 @@
 
   <!-- faqs -->
   <!-- faqs -->
-  <section id="faq" class="faq-section my-5">
+  <section id="faq" class="faq-section mt-5">
     <div class="fix-wrap">
       <div class="section-header">
         <h3 class="heading">FAQs</h3>
@@ -432,6 +509,9 @@
           <div class="content">
             <ul>
               <li>Kein fixer Arbeitsplatz bzw Geographisch unabhängig</li>
+              <li>Du bist dein eigener Boss</li>
+              <li>Du benötigst kein Lager für deine Produkte</li>
+              <li>Du benötigst nicht viel Startkapital</li>
             </ul>
           </div>
         </div>
@@ -492,30 +572,6 @@
     </div>
   </section>
 
-  <!-- section About  -->
-  <section id="about-service">
-    <div class="container">
-      <div class="row py-5 mb-5">
-        <div class="col text-center">
-          <div class="heading pt-5 ">
-            <h2>ÜBER UNS</h2>
-          </div>
-          <p class="pt-3">Wir als die <b>EcomBrothers</b> sind darauf spezialisiert, unseren Kunden zu einem
-            erfolgreichen Online-Business zu verhelfen. Dabei legen wir großen Wert auf eine individuelle &
-            <b>umfassende Betreuung unserer Kunden</b> .
-          </p>
-
-          <p>
-            Wir bieten eine Vielzahl von Dienstleistungen an, darunter die Erstellung von professionellen Webseiten
-            inklusive Produktrecherche & professionellen Werbevideos. Unsere langjährige Erfahrung und Expertise
-            ermöglicht uns eine enge Zusammenarbeit mit unseren Kunden & eine maßgeschneiderte Umsetzung <b>ihrer
-              Wünsche & Anforderungen</b> .
-          </p>
-          <p> <b>Wir freuen uns darauf</b>, Sie auf Ihrem Weg zum Erfolg zu begleiten!</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- footer -->
 
@@ -577,7 +633,9 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright EcomBrothers
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Logo_Transparent.avif" " width=" 189" alt="Your Logo">
+      </a>
 
     </div>
     <!-- Copyright -->
@@ -599,6 +657,33 @@
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+
+  </script>
+  <script>
+    // Show contact pop-up when contact button is clicked
+    document.getElementById('contactButton1').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('contactPopup1').style.display = 'block';
+    });
+
+    // Close contact pop-up when close button is clicked
+    document.getElementById('closePopup1').addEventListener('click', function () {
+      document.getElementById('contactPopup1').style.display = 'none';
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        items: 3, // Number of items to show on desktop
+        responsive: {
+          0: {
+            items: 1 // Number of items to show on mobile
+          }
+        },
+        nav: true, // Show navigation buttons
+        navText: ["<span class='prev-arrow'></span>", "<span class='next-arrow'></span>"] // Custom navigation icons
+      });
     });
 
   </script>

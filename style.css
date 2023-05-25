@@ -22,7 +22,11 @@
 .height-about{
     min-height: 80vh;
 }
-
+#more {display: none;}
+.read-more{
+    color: blue;
+    cursor: pointer;
+}
 .navbar {
     height: 12vh;
 }
@@ -84,7 +88,7 @@ a {
 }
 
 .btn-hover {
-    width: 200px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +140,7 @@ a {
 } */
 
 .thumbnail-image {
-    height: 350px;
+    height: 550px;
     overflow: hidden;
 }
 
@@ -452,8 +456,26 @@ footer {
 .btn-floating:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-
+.frame {
+    display: inline-block;
+    border: 15px solid #e5c562; /* Frame color */
+    background-color: black;
+  }
+  
+  .framed-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .about-top{
+    margin-top: 5em;
+  }
+  
+  
+/* .frame{
+    outline: 10px solid gold;
+    outline-offset: -50px;
+} */
 /* media queries start from here */
 @media(max-width: 680px) {
     #header {
@@ -544,13 +566,10 @@ footer {
         padding-top: 1em;
     }
    
-    /* #about {
-        padding-top: 8em;
+   
+    /* .p-top {
+        margin-top: 8rem !important;
     } */
-
-    .p-top {
-        margin-top: 5rem !important;
-    }
     .d-top{
         margin-top: 0 !important;
     }
@@ -566,4 +585,54 @@ footer {
     .show-respo {
         display: block !important;
     }
+    /* navbar collapse */
+    .navbar {
+        padding: 10px;
+        
+      }
+      
+      .navbar-brand,
+      .navbar-nav .nav-link {
+        margin: 0 10px;
+      }
+      
+      .navbar-nav .nav-link::after {
+        content: ".";
+      }
+      
+      .navbar-nav .nav-link:last-child::after {
+        content: none;
+      }
+      
+      /* Override default collapsed behavior */
+      .navbar-collapse.collapsing,
+      .navbar-collapse.show {
+        display: flex !important;
+        flex-basis: 100%;
+        justify-content: center;
+       
+      }
+      
+      .navbar-nav {
+        flex-direction: row !important;
+        border: 3px solid gold;
+      }
+      
+      .navbar-nav .nav-item {
+        margin: 0 5px;
+      }
+      .fs-responsive{
+        font-size: 26px !important;
+      }
+      .paket-top{
+        padding-top: 50px;
+      }
+      .about-top{
+        margin-top: 0 !important;
+      }
+      .thumbnail-image {
+        height: 350px;
+        overflow: hidden;
+    }
+
 }
