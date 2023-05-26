@@ -89,7 +89,7 @@
           </div>
           <p class="pt-3">Wir als die <b>EcomBrothers</b> sind darauf spezialisiert, unseren Kunden zu einem
             erfolgreichen Online-Business zu verhelfen<span id="dots">.</span><span class="read-more"
-              onclick="myFunction()" id="myBtn">Read more</span></p>
+              onclick="myFunction()" id="myBtn"><i class="fa-solid fa-circle-arrow-down"></i></span></p>
           <div id="more">
             <p>Dabei legen wir großen Wert auf eine individuelle &
               <b>umfassende Betreuung unserer Kunden</b>
@@ -247,8 +247,6 @@
           <div class="heading">
             <h2 class="box" data-sr="enter left, move 50px over 1s, 1s"> BAU DEINE BRAND AUF!</h2>
           </div>
-          <h3 class="pt-3 h5 subtext box text-uppercase" data-sr="enter left, move 50px over 1s, 1.5s">Heben Sie sich ab
-            oder verlieren Sie sich</h3>
           <p class="pt-3 box brand-paragraph" data-sr="enter left, move 50px over 1s, 2s" style="width:85%;">Wir finden
             die richtigen Produkte, die Ihren Shop verkaufen, erstellen und implementieren ihn, um Ihren <b>ersten
               Verkauf </b> zu erzielen, und helfen Ihnen dann, durch die Nutzung <b>bezahlter Werbung </b> profitabel zu
@@ -258,7 +256,7 @@
   </section>
 
   <!-- slider section -->
-  <section class="">
+  <section>
     <div class="container-fluid pt-5">
       <div class="heading pt-5">
         <h2 class="box" data-sr="enter left, move 50px over 1s">WAS UNSERE KLIENTEN ÜBER UNS SAGEN</h2>
@@ -537,7 +535,7 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-
+      touchRatio: 1, // Adjust the touch sensitivity as needed
     });
     ScrollReveal().reveal('.box', {
       origin: 'bottom',
@@ -581,11 +579,11 @@
 
       if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
+        btnText.innerHTML = '<i class="fa-solid fa-circle-arrow-down"></i>';
         moreText.style.display = "none";
       } else {
         dots.style.display = "none";
-        btnText.innerHTML = " Read less";
+        btnText.innerHTML = '<i class="fa-solid fa-circle-arrow-up"></i>';
         moreText.style.display = "inline";
       }
     }

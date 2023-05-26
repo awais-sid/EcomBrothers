@@ -281,26 +281,26 @@ a {
 
 #slider {
     position: relative;
-    min-height: 60vh;
+    height:100% ;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
 
 }
 
 .swiper {
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 260px;
+    width: 230px;
     background: #000;
     box-shadow: 0 15px 50px rbga(0, 0, 0, 0.2);
     filter: blur(4px);
@@ -325,7 +325,7 @@ a {
     background-image: url("images/frame-removebg.png");
     background-position: center;
     background-repeat: no-repeat;
-    transform: scale(0.9, 0.8);
+    transform: scale(0.8, 0.7);
     z-index: 10000;
     height: 100%;
     width: 100%;
@@ -459,7 +459,7 @@ footer {
 .frame {
     display: inline-block;
     border: 15px solid #e5c562; /* Frame color */
-    background-color: black;
+    /* background-color: black; */
   }
   
   .framed-image {
@@ -476,6 +476,7 @@ footer {
     outline: 10px solid gold;
     outline-offset: -50px;
 } */
+
 /* media queries start from here */
 @media(max-width: 680px) {
     #header {
@@ -634,5 +635,9 @@ footer {
         height: 350px;
         overflow: hidden;
     }
+    /* .btn-swiper{
+        font-size: 35px;
+    } */
+      
 
 }
