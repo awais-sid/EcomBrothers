@@ -458,8 +458,8 @@ footer {
 }
 .frame {
     display: inline-block;
-    border: 15px solid #e5c562; /* Frame color */
-    /* background-color: black; */
+    outline: 15px solid #e5c562; /* Frame color */
+    outline-offset: -40px
   }
   
   .framed-image {
@@ -470,8 +470,14 @@ footer {
   .about-top{
     margin-top: 5em;
   }
-  
-  
+  .price{
+    font-family: 'CustomFont', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .hide-carousel-desktop{
+    display: none;
+  }
 /* .frame{
     outline: 10px solid gold;
     outline-offset: -50px;
@@ -635,6 +641,9 @@ footer {
         height: 350px;
         overflow: hidden;
     }
+    .hide-carousel-desktop{
+        display: block !important;
+      }
     /* .btn-swiper{
         font-size: 35px;
     } */
