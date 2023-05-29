@@ -88,7 +88,7 @@ a {
 }
 
 .btn-hover {
-    width: 300px;
+    width: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,13 +134,8 @@ a {
     height: 100vh;
 }
 
-/* .image-screen {
-    background: url("./images/EcomBros.JPG") center/cover no-repeat;
-    border-radius: 10px;
-} */
-
 .thumbnail-image {
-    height: 550px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -187,9 +182,7 @@ a {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-.d-top{
-    margin-top: 6rem;
-}
+
 /* faq */
 .faq-section {
     font-family: 'CustomFont', sans-serif;
@@ -458,8 +451,8 @@ footer {
 }
 .frame {
     display: inline-block;
-    outline: 15px solid #e5c562; /* Frame color */
-    outline-offset: -40px
+    border: 15px solid #e5c562; /* Frame color */
+    padding: 12px 0;
   }
   
   .framed-image {
@@ -638,15 +631,12 @@ footer {
         margin-top: 0 !important;
       }
       .thumbnail-image {
-        height: 350px;
+        height: 400px;
         overflow: hidden;
+
     }
     .hide-carousel-desktop{
         display: block !important;
       }
-    /* .btn-swiper{
-        font-size: 35px;
-    } */
-      
-
+     
 }
