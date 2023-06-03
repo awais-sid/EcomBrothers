@@ -492,11 +492,17 @@ footer {
 .hide-section{
     display: none;
 }
-/* .frame{
-    outline: 10px solid gold;
-    outline-offset: -50px;
-} */
-
+.agbs h2{
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+.agb-list{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 17px;
+    color: #000000;
+}
 /* media queries start from here */
 @media(max-width: 680px) {
     #header {
