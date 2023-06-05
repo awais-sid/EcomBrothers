@@ -503,6 +503,9 @@ footer {
     font-size: 17px;
     color: #000000;
 }
+.text-font{
+    font-family: 'CustomFont', sans-serif;
+}
 /* media queries start from here */
 @media(max-width: 680px) {
     #header {
@@ -577,6 +580,7 @@ footer {
 
     .brand-paragraph {
         margin: 0 auto;
+
     }
 
     .icon-footer {
