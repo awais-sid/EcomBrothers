@@ -382,7 +382,7 @@ footer {
     width: 100%;
 }
 
-.description{
+.description {
     padding-top: 2.5rem;
 }
 
@@ -489,23 +489,28 @@ footer {
 .hide-carousel-desktop {
     display: none;
 }
-.hide-section{
+
+.hide-section {
     display: none;
 }
-.agbs h2{
+
+.agbs h2 {
     font-size: 40px;
     color: #000000;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-.agb-list{
+
+.agb-list {
     font-family: 'CustomFont', sans-serif;
     font-size: 17px;
     color: #000000;
 }
-.text-font{
+
+.text-font {
     font-family: 'CustomFont', sans-serif;
 }
+
 /* media queries start from here */
 @media(max-width: 680px) {
     #header {
@@ -602,20 +607,9 @@ footer {
     .title h1 {
         padding-top: 1em;
     }
-
-
-    /* .p-top {
-        margin-top: 8rem !important;
-    } */
     .d-top {
         margin-top: 0 !important;
     }
-
-    /* 
-    #about {
-        margin-top: 15rem;
-    } */
-
     .show-res {
         display: none;
     }
@@ -632,7 +626,7 @@ footer {
 
     .navbar-brand,
     .navbar-nav .nav-link {
-        margin: 0 10px;
+        margin: 0 10px; 
     }
 
     .navbar-nav .nav-link::after {
@@ -649,16 +643,21 @@ footer {
         display: flex !important;
         flex-basis: 100%;
         justify-content: center;
+        width: 90%;
 
     }
 
     .navbar-nav {
         flex-direction: row !important;
-        border: 3px solid gold;
+        border: 2px solid gold;
     }
 
     .navbar-nav .nav-item {
-        margin: 0 5px;
+        margin: 0 0;
+        border: 2px solid gold;
+    }
+    .lisa{
+        width: 100px;
     }
 
     .fs-responsive {
@@ -676,20 +675,22 @@ footer {
     .thumbnail-image {
         height: 400px;
         overflow: hidden;
-
     }
 
     .hide-carousel-desktop {
         display: block !important;
     }
-    .description{
+
+    .description {
         padding-top: 0 !important;
     }
-    .hide-section{
+
+    .hide-section {
         display: block !important;
     }
-   .show-section{
-    display: none !important;
-   }
-    
+
+    .show-section {
+        display: none !important;
+    }
+
 }

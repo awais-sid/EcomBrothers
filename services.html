@@ -38,7 +38,13 @@
             <a class="nav-link" href="services.html">UNSER SERVICE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#faq">FAQs</a>
+            <a class="nav-link " href="#faq">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agb">AGB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#impressum">IMPRESSUM</a>
           </li>
         </ul>
       </div>
@@ -237,11 +243,11 @@
                 <p class="text-center text-success price "><del style="color:#999; font-size: 26px;">799€</del> 350€
                 </p>
                 <!-- Add a contact button -->
-                <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto " id="contactButton" class="contact-us-btn"
+                <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto " id="contactButton3" class="contact-us-btn"
                   data-bs-toggle="tooltip" style="font-size: 16px;"> Kontaktiere Uns</a>
       
                 <!-- Contact pop-up -->
-                <div id="contactPopup" class="popup">
+                <div id="contactPopup3" class="popup">
                   <div class="popup-content">
                     <h3>Kontaktiere uns!</h3>
                     <p>Du kannst uns über Instagram oder WhatsApp kontaktieren:</p>
@@ -251,12 +257,10 @@
                       <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+4917615639369?text=ECOM"
                         role="button"><i class="fa-brands fa-whatsapp fa-3x text-success"></i></a>
                     </ul>
-                    <button id="closePopup" class="btn btn-danger">Close</button>
+                    <button id="closePopup3" class="btn btn-danger">Close</button>
                   </div>
                 </div>
               </div>
-
-    
         </div>
       </div>
     </div>
@@ -274,7 +278,6 @@
             <p class="text-start">Warum Du uns beauftragen solltest:</p>
             <ul>
               <li>Shopify & Dropshipping Experten seit mehr als 5 Jahren</li>
-              <li>5+ Jahre Erfahrung mit Shopify</li>
               <li>100 % Kostenloser Support</li>
               <li>100 % Kundenzufriedenheit</li>
               <li>100 % Professionelle Arbeit</li>
@@ -302,27 +305,27 @@
               zur
               Verfügung.
             </p>
-            <!-- Add a contact button -->
-            <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto mt-5" id="contactButton1" class="contact-us-btn1"
-              data-bs-toggle="tooltip" style="font-size: 16px;"> Kontaktiere Uns
-            </a>
-
-            <!-- Contact pop-up -->
-            <div id="contactPopup1" class="popup">
-              <div class="popup-content">
-                <h3>Kontaktiere uns!</h3>
-                <p>Du kannst uns über Instagram oder WhatsApp kontaktieren:</p>
-                <ul>
-                  <a class="btn btn-outline-light btn-floating m-1"
-                    href="https://www.instagram.com/ecombrothersofficial/" role="button"><i
-                      class="fab fa-instagram text-danger fa-3x"></i></a>
-                  <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+4917615639369?text=ECOM"
-                    role="button"><i class="fa-brands fa-whatsapp fa-3x text-success"></i></a>
-                </ul>
-                <button id="closePopup1" class="btn btn-danger">Close</button>
-              </div>
-            </div>
           </div>
+           <!-- Add a contact button -->
+           <a href="#" class=" btn-hover color-6 px-2 py-4 mx-auto mt-5" id="contactButton1" class="contact-us-btn1"
+           data-bs-toggle="tooltip" style="font-size: 16px;"> Kontaktiere Uns
+         </a>
+
+         <!-- Contact pop-up -->
+         <div id="contactPopup1" class="popup">
+           <div class="popup-content">
+             <h3>Kontaktiere uns!</h3>
+             <p>Du kannst uns über Instagram oder WhatsApp kontaktieren:</p>
+             <ul>
+               <a class="btn btn-outline-light btn-floating m-1"
+                 href="https://www.instagram.com/ecombrothersofficial/" role="button"><i
+                   class="fab fa-instagram text-danger fa-3x"></i></a>
+               <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/+4917615639369?text=ECOM"
+                 role="button"><i class="fa-brands fa-whatsapp fa-3x text-success"></i></a>
+             </ul>
+             <button id="closePopup1" class="btn btn-danger">Close</button>
+           </div>
+         </div>
         </div>
       </div>
     </div>
@@ -696,7 +699,7 @@
               Obligationenrecht (OR) und dem Bundesgesetz über Fernmeldedienste (FMG).
             </p> <br>
 
-            <p class="text-start">
+            <p class="text-start" id="impressum">
               Impressum <br>
 
               Ecom Brothers <br>
@@ -803,9 +806,6 @@
       document.getElementById('contactPopup').style.display = 'none';
     });
 
-
-  </script>
-  <script>
     // Show contact pop-up when contact button is clicked
     document.getElementById('contactButton1').addEventListener('click', function (event) {
       event.preventDefault();
@@ -815,6 +815,17 @@
     // Close contact pop-up when close button is clicked
     document.getElementById('closePopup1').addEventListener('click', function () {
       document.getElementById('contactPopup1').style.display = 'none';
+    });
+
+    // Show contact pop-up when contact button is clicked
+    document.getElementById('contactButton3').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('contactPopup3').style.display = 'block';
+    });
+
+    // Close contact pop-up when close button is clicked
+    document.getElementById('closePopup3').addEventListener('click', function () {
+      document.getElementById('contactPopup3').style.display = 'none';
     });
   </script>
 
