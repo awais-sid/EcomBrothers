@@ -649,17 +649,17 @@ footer {
 
     .navbar-nav {
         flex-direction: row !important;
-        border: 2px solid gold;
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+        justify-content: center;
+        background: transparent;
     }
 
     .navbar-nav .nav-item {
-        margin: 0 0;
         border: 2px solid gold;
+        background-color: #fff;
     }
-    .lisa{
-        width: 100px;
-    }
-
     .fs-responsive {
         font-size: 26px !important;
     }
