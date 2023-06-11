@@ -510,6 +510,10 @@ footer {
     font-family: 'CustomFont', sans-serif;
 }
 
+#agb{
+    padding-top: 8rem;
+}
+
 /* media queries start from here */
 @media(max-width: 680px) {
     #header {
@@ -664,6 +668,7 @@ footer {
 
     .fs-responsive {
         font-size: 26px !important;
+        text-align: center !important;
     }
 
     .paket-top {
@@ -694,5 +699,7 @@ footer {
     .show-section {
         display: none !important;
     }
-
+    #agb{
+        padding-top: 5rem;
+    }
 }
