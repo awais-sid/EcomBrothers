@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="images/Logo_Transparent.png" " width=" 189" alt="Your Logo">
+        <img src="images/Logo_Transparent.png" width="189" alt="Ecombrothers Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,15 +35,15 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="agb.html">AGB</a>
+          <li class="nav-item nav-border">
+            <a class="nav-link " href="#service">UNSER SERVICE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="impressum.html">IMPRESSUM</a>
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
         </ul>
       </div>
-      <a href="services.html"><button class="btn btn-warning nav-btn mx-3 hide">Get Started</button>
+      <a href="services.html"><button class="btn btn-warning  nav-btn mx-3 hide">Get Started</button>
       </a>
 
     </div>
@@ -610,9 +610,15 @@
   </section>
 
   <!-- footer -->
-  <footer class="bg-dark text-center text-white pt-5" style="  background: linear-gradient(to left, #af7b27, #e5c562);">
+  <footer class="bg-dark text-center foot text-white"
+    style="  background: linear-gradient(to left, #af7b27, #e5c562);  ">
     <!-- Grid container -->
     <div class="container p-4 pb-4">
+      <section class="footer-links mb-3">
+        <a href="agb.html">AGBs</a>
+        <span class="px-2">|</span>
+        <a href="impressum.html">Impressum</a>
+      </section>
       <!-- Section: Form -->
       <section class="">
         <div class="container pb-0">
@@ -661,6 +667,7 @@
           </div>
           <!--Grid row-->
         </form>
+
         <div class="container pb-0">
           <!-- Section: payment method -->
           <section class="icon-footer mb-4">
@@ -686,6 +693,7 @@
     </div>
     <!-- Copyright -->
   </footer>
+  
 <script>
     // accordian faqs
     let items = document.querySelectorAll(".faq-section .faq-accordions .title");

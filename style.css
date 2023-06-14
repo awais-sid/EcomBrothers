@@ -513,6 +513,12 @@ footer {
 #agb{
     padding-top: 8rem;
 }
+.footer-links a{
+    font-family: 'CustomFont', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+}
 
 /* media queries start from here */
 @media(max-width: 680px) {
@@ -661,9 +667,15 @@ footer {
         background: transparent;
     }
 
-    .navbar-nav .nav-item {
-        border: 2px solid gold;
+    .navbar-nav .nav-item  {
+        /* border-right: 2px solid gold;
+        border-left: 2px solid gold; */
         background-color: #fff;
+    }
+    .nav-border{
+        border-right: 2px solid gold;
+        border-left: 2px solid gold;
+
     }
 
     .fs-responsive {
