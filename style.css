@@ -668,15 +668,10 @@ footer {
     }
 
     .navbar-nav .nav-item  {
-        /* border-right: 2px solid gold;
-        border-left: 2px solid gold; */
+        border: 2px solid gold;
         background-color: #fff;
     }
-    .nav-border{
-        border-right: 2px solid gold;
-        border-left: 2px solid gold;
 
-    }
 
     .fs-responsive {
         font-size: 26px !important;
